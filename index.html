@@ -3,40 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Adivina el numero</title>
 </head>
-<body class="h-screen flex justify-center items-center bg-[#E0D2B4] ">
+<body class="h-screen flex justify-center items-center bg-[#C4B395]">
 
-  <main class="w-3/4 flex bg-[#faf3d7] border-8 border-[#EFE2CA] rounded-lg">
+  <div class="w-4/6 h-4/6  flex items-center bg-[#faf3d7] border-8 border-[#D6C3A5] rounded-lg">
 
-    <div>
-      <img src="./img/numero.png" alt="numero" class="w-2/6 mx-20 my-32">
+    <div class="w-4/6 h-2/3  p-5 flex flex-col justify-center items-center gap-5">
 
-      <h2>
-
-      </h2>
-
+      <img src="./img/numero.png" alt="numero">
+      <h2 class="h-8 text-[#C4B395] text-2xl font-semibold">Record Modo Facil: 3</h2>
     </div>
-    
-    <div class="w-full">
 
+    <main class="w-full h-full flex flex-col justify-between items-center">
 
-      
-      <div>
-        <input type="text">
+      <header class="relative flex w-full h-1/5 justify-center items-center">
+        <h1 class="text-4xl text-center text-[#D6C3A5] font-bold tracking-widest">ADIVINA EL NUMERO</h1>
+        <svg class="absolute right-5 group cursor-pointer" width="40" height="40" viewBox="0 0 128 128"  version="1.1">
+          <path  class="fill-[#D6C3A5] group-hover:fill-[#C4B395] duration-300" d="m 60.90625,7.984375 c -28.67767,0 -51.9375,23.259829 -51.9375,51.9375 0,16.676866 7.86714,31.512857 20.09375,41.000005 l -10.96875,10.65625 36,0.3125 0.75,-36.000005 -11.375,11.03125 C 34.61486,81.195848 28.75,71.254649 28.75,59.921875 c 0,-17.763035 14.39321,-32.15625 32.15625,-32.15625 0.77958,0 1.54683,0.03923 2.3125,0.09375 l 0,-19.8125 c -0.76301,-0.03329 -1.5413,-0.0625 -2.3125,-0.0625 z m 13,8.125 -0.75,36 11.375,-11.03125 c 8.85389,5.726027 14.71875,15.667226 14.71875,27 0,17.763035 -14.39321,32.156255 -32.15625,32.156255 -0.779582,0 -1.546832,-0.0392 -2.3125,-0.0937 l 0,19.8125 c 0.763014,0.0333 1.541303,0.0625 2.3125,0.0625 28.67767,0 51.9375,-23.259834 51.9375,-51.937505 0,-16.676866 -7.86714,-31.512857 -20.09375,-41 l 10.96875,-10.65625 -36,-0.3125 z"/>
+        </svg>
+      </header>
 
+      <div class="h-32 flex flex-col justify-between items-center">
+        <input class="w-20 px-5 pb-2 bg-[#faf3d7] border-b-2 text-2xl text-center font-semibold border-[#D6C3A5] rounded focus:outline-none focus:border-[#C4B395] transition-colors duration-300" type="text">
+        
         <div>
-
+          <h3 class="text-[#C4B395] font-bold">Has perdido</h3>
         </div>
       </div>
 
-      <footer>
+      <footer class="relative w-full h-12 flex justify-end items-end">
+
+        <div class="absolute -top-28 w-48 bg-[#faf3d7] border-t-4 border-l-4 border-[#D6C3A5] rounded-tl text-xl text-center tracking-widest font-semibold">
+          <h4 class="py-1 text-[#C4B395] hover:bg-[#D6C3A5] hover:text-[#faf3d7] cursor-pointer duration-300">Facil</h4>
+          <h4 class="py-1 text-[#C4B395] hover:bg-[#D6C3A5] hover:text-[#faf3d7] cursor-pointer duration-300">Medio</h4>
+          <h4 class="py-1 text-[#C4B395] hover:bg-[#D6C3A5] hover:text-[#faf3d7] cursor-pointer duration-300">Dificil</h4>
+        </div>
+
+        <div class="w-56 px-2 flex justify-around items-center bg-[#faf3d7] border-t-4 border-l-4 border-[#D6C3A5] rounded-tl cursor-pointer">
+
+          <svg fill="#C4B395" height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve">
+            <g>
+              <g>
+                <path d="M505.749,304.918L271.083,70.251c-8.341-8.341-21.824-8.341-30.165,0L6.251,304.918C2.24,308.907,0,314.326,0,320.001
+                  v106.667c0,8.619,5.184,16.427,13.163,19.712c7.979,3.307,17.152,1.472,23.253-4.629L256,222.166L475.584,441.75
+                  c4.075,4.075,9.536,6.251,15.083,6.251c2.752,0,5.525-0.512,8.171-1.621c7.979-3.285,13.163-11.093,13.163-19.712V320.001
+                  C512,314.326,509.76,308.907,505.749,304.918z"/>
+              </g>
+            </g>
+          </svg>
+
+          <h4 class="text-center text-xl text-[#C4B395] p-2 font-bold tracking-widest">Dificultad</h4>
+        </div>
 
       </footer>
-    </div>
-    
-  </main>
-
+    </main>
+  </div>
 </body>
+
 </html>
